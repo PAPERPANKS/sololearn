@@ -12,6 +12,6 @@ class myclass{
         int value = sum_obj.print(5, 7);
         System.out.println(value);
         System.out.println("hello "+name+" :) !");
-        
+
     }
 }

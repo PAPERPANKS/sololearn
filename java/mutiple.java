@@ -13,6 +13,7 @@ class loop1 extends Thread {
         catch(InterruptedException e){
             System.out.println(e);
         }
+        
     }
 }
 class loop2 extends Thread {
@@ -32,7 +33,12 @@ class loop2 extends Thread {
 class multiple{
     public static void main(String[] args) {
         loop1 obj = new loop1();
-        new loop2().start();
+        //new loop2().start();
         obj.start();
+        //obj.stop();
+        loop1 abc = new loop1();
+        abc.start();
+        
+        
     }
 }
